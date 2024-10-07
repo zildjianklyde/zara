@@ -1,0 +1,14 @@
+.title--div{
+    border: 1px solid;
+    text-align: center;
+    border-color: aqua;
+}
+
+.h1--about{
+    color: black;
+}
+
+h2 {
+    color: aquamarine;
+    text-align: center;
+}
