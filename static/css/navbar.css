@@ -1,45 +1,43 @@
-/* Navbar styles */
 .navbar {
-    background-color: #a29bfe; /* Navbar background color */
-    padding: 10px 20px; /* Spacing around the items */
-    position: fixed; /* Fix the navbar at the top */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it sits above other content */
-    top: 0; /* Start at the top */
-    transition: top 0.3s; /* Smooth transition for hiding */
+    background-color: #a29bfe; 
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%; 
+    z-index: 1000; 
+    top: 0; 
+    transition: top 0.3s; 
 }
 
 .navbar-container {
-    max-width: 1200px; /* Center the navbar items */
-    margin: 0 auto; /* Center alignment */
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: flex-start; /* Align links to the left */
-    align-items: center; /* Center items vertically */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
 }
 
 .nav-link {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Padding for clickable area */
-    transition: background 0.3s, color 0.3s; /* Transition for effects */
-    border-radius: 5px; /* Rounded corners */
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background 0.3s, color 0.3s; 
+    border-radius: 5px; 
 }
 
 .nav-link:hover {
-    background-color: #6c5ce7; /* Background color on hover */
-    color: #dfe6e9; /* Text color on hover */
+    background-color: #6c5ce7; 
+    color: #dfe6e9;
 }
 
-/* Add some responsiveness */
 @media (max-width: 768px) {
     .navbar-container {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center;
     }
 
     .nav-link {
-        padding: 10px 20px; /* Adjust padding */
-        width: 100%; /* Full width for links */
-        text-align: center; /* Center text */
+        padding: 10px 20px; 
+        width: 100%;
+        text-align: center; 
     }
 }
