@@ -1,0 +1,45 @@
+/* Navbar styles */
+.navbar {
+    background-color: #a29bfe; /* Navbar background color */
+    padding: 10px 20px; /* Spacing around the items */
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it sits above other content */
+    top: 0; /* Start at the top */
+    transition: top 0.3s; /* Smooth transition for hiding */
+}
+
+.navbar-container {
+    max-width: 1200px; /* Center the navbar items */
+    margin: 0 auto; /* Center alignment */
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: flex-start; /* Align links to the left */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for clickable area */
+    transition: background 0.3s, color 0.3s; /* Transition for effects */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.nav-link:hover {
+    background-color: #6c5ce7; /* Background color on hover */
+    color: #dfe6e9; /* Text color on hover */
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .nav-link {
+        padding: 10px 20px; /* Adjust padding */
+        width: 100%; /* Full width for links */
+        text-align: center; /* Center text */
+    }
+}
